@@ -1,12 +1,12 @@
 
-scalaVersion := versions.scalaVersion
+scalaVersion := "2.12.2"
 
 libraryDependencies := Seq(
   ws,
   guice,
-  caffeine,
+  //caffeine, // Not supported in SBT 0.13.x
   specs2 % Test,
-  "com.typesafe.play" %% "play-json" % versions.playVersion,
-  "com.typesafe.play" %% "play-slick" % versions.slickVersion,
-  "com.typesafe.play" %% "play-slick-evolutions" % versions.slickVersion
+  "com.typesafe.play" %% "play-json" % "2.6.12",
+  "com.typesafe.play" %% "play-slick" % "3.0.1",
+  "com.typesafe.play" %% "play-slick-evolutions" % "3.0.1"
 )
